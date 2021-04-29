@@ -1,0 +1,53 @@
+## student path
+* greet
+   - utter_ask_type
+* current_student
+   - info_form
+    - form{"name":"info_form"}
+    - slot{"requested_slot":"name"}
+* name_entry{"name":"Meet"}
+    - slot{"name":"Meet"}
+    - slot{"name":"Meet"}
+    - info_form
+    - slot{"name":"Meet"}
+    - slot{"requested_slot":"number"}
+* number_entry{"number":"8928304380"}
+    - slot{"number":"8928304380"}
+    - slot{"number":"8928304380"}
+    - info_form
+    - slot{"number":"8928304380"}
+    - slot{"requested_slot":"city"}
+* ask_branch{"branch":"IT"}
+    - slot{"branch":"IT"}
+    - utter_submit
+* affirm
+   - utter_affirm
+* time_table
+   - utter_time_table
+* results
+   - utter_results
+* gym
+   - utter_gym
+* gym_girls
+   - utter_gym_girls
+* events
+   - utter_events
+
+## New Story
+
+* greet
+    - utter_ask_type
+* current_student
+    - utter_ask_name
+* name_entry{"name":"Meet"}
+    - slot{"name":"Meet"}
+    - slot{"name":"Meet"}
+    - utter_ask_number
+* number_entry{"number":"8928304380"}
+    - slot{"number":"8928304380"}
+    - utter_ask_branch
+* branch_entry{"branch":"IT"}
+    - slot{"branch":"IT"}
+    - utter_affirm
+* results
+    - utter_results
