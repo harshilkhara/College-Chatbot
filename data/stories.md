@@ -20,34 +20,68 @@
 * ask_branch{"branch":"IT"}
     - slot{"branch":"IT"}
     - utter_submit
-* affirm
-   - utter_affirm
+* student_affirm
+    - utter_student_affirm
 * time_table
-   - utter_time_table
+    - utter_time_table
 * results
-   - utter_results
+    - utter_results
+* intake
+    - action_intake_api    
 * gym
-   - utter_gym
+    - utter_gym
 * gym_girls
-   - utter_gym_girls
+    - utter_gym_girls
 * events
-   - utter_events
+    - utter_events 
 
-## New Story
-
+## Happy Parent 
 * greet
     - utter_ask_type
-* current_student
-    - utter_ask_name
+* parent
+    - utter_parent_affirm
+* courses
+    - utter_courses
+* office_number
+    - utter_office_number
+* principal
+    - utter_principal
+* affiliation
+    - utter_affiliation
+* working_hours
+    - utter_working_hours
+* thanks
+    - utter_thanks
+
+<!-- ## parent path
+* greet
+    - utter_ask_type
+* parent
+    - info_form
+    - form{"name":"info_form"}
+    - slot{"requested_slot":"name"}
 * name_entry{"name":"Meet"}
     - slot{"name":"Meet"}
     - slot{"name":"Meet"}
-    - utter_ask_number
+    - info_form
+    - slot{"name":"Meet"}
+    - slot{"requested_slot":"number"}
 * number_entry{"number":"8928304380"}
     - slot{"number":"8928304380"}
-    - utter_ask_branch
-* branch_entry{"branch":"IT"}
+    - slot{"number":"8928304380"}
+    - info_form
+    - slot{"number":"8928304380"}
+    - slot{"requested_slot":"city"}
+* ask_branch{"branch":"IT"}
     - slot{"branch":"IT"}
-    - utter_affirm
-* results
-    - utter_results
+    - utter_parent_submit
+* parent_affirm
+    - utter_parent_affirm
+* principal
+    - utter_principal
+* working_hours
+	- utter_working_hours
+* office_number
+	- utter_office_number
+* affiliation
+	- utter_affiliation -->

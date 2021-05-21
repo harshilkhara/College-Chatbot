@@ -4,7 +4,8 @@ session_config:
 intents:
 - greet
 - goodbye
-- affirm
+- student_affirm
+- parent_affirm
 - deny
 - mood_great
 - mood_unhappy
@@ -15,6 +16,7 @@ intents:
 - time_table
 - prospective
 - results
+- thanks
 - events
 - gym
 - ask_name
@@ -25,6 +27,13 @@ intents:
 - number_entry
 - branch_entry
 - ask_branch
+- principal
+- working_hours
+- courses
+- office_number
+- affiliation
+- thank
+- intake
 entities:
 - name
 - branch
@@ -48,6 +57,8 @@ responses:
   - text: Did that help you?
   utter_happy:
   - text: Great, carry on!
+  utter_affiliation:
+  - text: College is affiliated to Mumbai University.
   utter_goodbye:
   - text: Bye
   utter_iamabot:
@@ -63,14 +74,23 @@ responses:
   utter_ask_number:
   - text: Please provide with your valid mobile number
   utter_time_table:
-  - text: No changes
+  - link: https://www.shahandanchor.com/it/wp-content/uploads/2021/01/BE6.pdf
+    text: Follow this link for the Time Table
   utter_results:
   - text: You can get them on the college website
+  utter_courses:
+  - text: IT, Computer Science, EXTC
+  utter_principal:
+  - text: Principal
+  utter_working_hours:
+  - text: These are the working hours
+  utter_office_number:
+  - text: These are the numbers you can contact on
   utter_ask_type:
   - buttons:
     - payload: /teacher
       title: Teacher
-    - payload: current_student
+    - payload: /current_student
       title: Current Student
     - payload: /parent
       title: Parent
@@ -79,8 +99,9 @@ responses:
     text: 'Please select your preference:'
   utter_submit:
   - text: "Your details are as follows \n {name}\n {number}\n {branch}\n. Please confirm\
-      \ with yes/no"
-  utter_affirm:
+      \ with yes/ya/no"
+
+  utter_student_affirm:
   - buttons:
     - payload: /time_table
       title: TimeTable
@@ -90,11 +111,34 @@ responses:
       title: Gym
     - payload: /events
       title: CurrentEvents
+    - payload: /intake
+      title: Intake
+    text: Please select your preference
+  utter_parent_affirm:
+  - buttons:
+    - payload: /principal
+      title: Principal
+    - payload: /office_number
+      title: Contact
+    - payload: /working_hours
+      title: Working Hours
+    - payload: /affiliation
+      title: Affiliation
     text: Please select your preference
   utter_gym:
   - text: 'FE: 11:00am-12:00pm  SE: 12:00pm-1:00pm TE: 1:00pm-2:00pm BE:2:00pm-3:00pm'
+  utter_thanks:
+  - text: Happy to help!
+  utter_intake:
+  - text: The intake {temp} for IT 
 actions:
-- utter_affirm
+- utter_student_affirm
+- utter_parent_affirm
+- utter_courses
+- utter_affiliation
+- utter_working_hours
+- utter_office_number
+- utter_principal
 - utter_submit
 - utter_ask_branch
 - utter_time_table
@@ -112,5 +156,7 @@ actions:
 - utter_iamabot
 - utter_ask_type
 - user_form
+- utter_thanks
+- action_intake_api
 forms:
 - info_form

@@ -1,0 +1,39 @@
+{
+    "intents": [],
+    "0": {
+        "tag": "harshil",
+        "patterns": [
+            "harshillll"
+        ],
+        "responses": [
+            "nhi"
+        ]
+    },
+    "1": {
+        "tag": "hi",
+        "patterns": [
+            "hello"
+        ],
+        "responses": [
+            "hey"
+        ]
+    },
+    "2": {
+        "tag": "hi",
+        "patterns": [
+            "hey"
+        ],
+        "responses": [
+            "hello"
+        ]
+    },
+    "3": {
+        "tag": "greet",
+        "patterns": [
+            "hi; hey"
+        ],
+        "responses": [
+            "hello"
+        ]
+    }
+}

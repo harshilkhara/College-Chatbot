@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Shah & Anchor Kutchhi Engineering College</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	a {
+  		color: white;
+  	}
+ 
+  </style>
+</head>
+<body>
+
+	<div class="container-fluid">
+		<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Shah & Anchor Kutchhi Engineering College</a>
+    </div>
+    <ul class="nav navbar-nav" style="background-color: #536f90;">
+      <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+      <li><a href="#" style="color: white;">About Us</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" style="color: white" href="#">Department<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="it.html">IT</a></li>
+          <li><a href="#">CS</a></li>
+          <li><a href="#">EXTC</a></li>
+          <li><a href="#">Electronics</a></li>
+        </ul>
+      </li>
+      <li><a href="#" style="color: white;">Staff</a></li>
+      <li><a href="#" style="color: white;">Admission</a></li>
+      <li><a href="#" style="color: white;">Library</a></li>
+      <li><a href="#" style="color: white;">life @ sakec</a></li>
+      <li><a href="#" style="color: white;">Placement</a></li>
+      <li><a href="#" style="color: white;">R & D</a></li>
+      <li><a href="#" style="color: white;">IIC</a></li>
+      <li><a href="#" style="color: white;">TLC</a></li>
+      <li><a href="#" style="color: white;">NSIP</a></li>
+      <li><a href="#" style="color: white;">Alumni</a></li>
+      <li><a href="#" style="color: white;">Notice Board</a></li>
+      <li><a href="#" style="color: white;">Accredation</a></li>
+      <li><a href="#" style="color: white;">Payment</a></li>
+      <li><a href="#" style="color: white;">Reach Us</a></li>
+      <li><a href="#" style="color: white;">FAQ</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+	<div class="col-md-12">
+		<marquee width="90%" direction="left" height="100px">
+			This is a sample scrolling text that has scrolls texts to left.
+		</marquee>
+	</div>
+	<div class="col-md-8">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="download.jpg" alt="SAKEC" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="chicago.jpg" alt="Chicago" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="ny.jpg" alt="New york" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <head>
+    <title>Chatbot Widget</title>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500&display=swap" rel="stylesheet">
+
+    <!--Import Font Awesome Icon Font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+    <!--Import materialize.css-->
+    <link rel="stylesheet" type="text/css" href="static/css/materialize.min.css">
+
+    <!--Main css-->
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Modal for rendering the charts, declare this if you want to render charts, 
+         else you remove the modal -->
+        <div id="modal1" class="modal">
+            <canvas id="modal-chart"></canvas>
+        </div>
+
+        <!--chatbot widget -->
+        <div class="widget">
+            <div class="chat_header" style="background-color: #536f90;">
+
+                <!--Add the name of the bot here -->
+                <span class="chat_header_title" style="background-color: #536f90;">SAKEC Bot</span>
+                <span class="dropdown-trigger" href='#' data-target='dropdown1'>
+                  <i class="material-icons">
+                  more_vert
+                  </i>
+               </span>
+
+                <!-- Dropdown menu-->
+                <ul id='dropdown1' class='dropdown-content'>
+                    <li><a href="#" id="clear">Clear</a></li>
+                    <li><a href="#" id="restart">Restart</a></li>
+                    <li><a href="#" id="close">Close</a></li>
+                </ul>
+            </div>
+
+            <!--Chatbot contents goes here -->
+            <div class="chats" id="chats">
+                <div class="clearfix"></div>
+
+            </div>
+
+            <!--keypad for user to type the message -->
+            <div class="keypad">
+                <textarea id="userInput" placeholder="Type a message..." class="usrInput"></textarea>
+                <div id="sendButton"><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
+            </div>
+        </div>
+
+        <!--bot profile-->
+        <div class="profile_div" id="profile_div">
+            <img class="imgProfile" src="sakeclogo.png" />
+        </div>
+
+        <!-- Bot pop-up intro -->
+        <div class="tap-target" data-target="profile_div">
+            <div class="tap-target-content">
+                <h5 class="white-text">Hey there 👋</h5>
+                <p class="white-text">I can help you get started with Rasa and answer your technical questions.</p>
+            </div>
+        </div>
+
+    
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/materialize.min.js"></script>
+
+    <!--Main Script -->
+    <script type="text/javascript" src="static/js/script.js"></script>
+
+    <!--Chart.js Script -->
+    <script type="text/javascript" src="static/js/chart.min.js"></script>
+
+</body>
+	</div>
+</div>
+</div>
+  
+
+
+</body>
+</html>
