@@ -30,10 +30,18 @@ intents:
 - principal
 - working_hours
 - courses
-- office_number
 - affiliation
 - thank
 - intake
+- itprof
+- fees1 
+- fees2 
+- fees3 
+- fees4 
+- register
+- contact
+- address
+- office_number
 entities:
 - name
 - branch
@@ -60,7 +68,7 @@ responses:
   utter_affiliation:
   - text: College is affiliated to Mumbai University.
   utter_goodbye:
-  - text: Bye
+  - text: Good Bye
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
   utter_events:
@@ -81,16 +89,14 @@ responses:
   utter_courses:
   - text: IT, Computer Science, EXTC
   utter_principal:
-  - text: Principal
+  - text: Dr. Bhavesh Patel is our college principal
   utter_working_hours:
-  - text: These are the working hours
-  utter_office_number:
-  - text: These are the numbers you can contact on
+  - text: The working hours of our college is 9AM-6PM
   utter_ask_type:
   - buttons:
     - payload: /teacher
       title: Teacher
-    - payload: /current_student
+    - payload: current_student
       title: Current Student
     - payload: /parent
       title: Parent
@@ -129,15 +135,33 @@ responses:
   - text: 'FE: 11:00am-12:00pm  SE: 12:00pm-1:00pm TE: 1:00pm-2:00pm BE:2:00pm-3:00pm'
   utter_thanks:
   - text: Happy to help!
+  utter_itprof:
+  - text: The HOD of IT is {temp1}
   utter_intake:
   - text: The intake {temp} for IT 
+  utter_fees1:
+  - text: The fees of first year is Rs {temp2}
+  utter_fees2:
+  - text: The fees of second year Rs {temp3}
+  utter_fees3:
+  - text: The fees of third year Rs {temp4}
+  utter_fees4:
+  - text: The fees of fourth year Rs {temp5}
+  utter_register:
+  - text: The last date for admission is {temp6}
+  utter_contact:
+  - text: The contact number is {temp7}
+  utter_address: 
+  - text: Mahavir Education Trust Chowk, W.T Patil Marg, Chembur, next to Duke's Company, Mumbai, Maharashtra 400088
+  utter_office_number:
+  - text: The office number is 
+
 actions:
 - utter_student_affirm
 - utter_parent_affirm
 - utter_courses
 - utter_affiliation
 - utter_working_hours
-- utter_office_number
 - utter_principal
 - utter_submit
 - utter_ask_branch
@@ -158,5 +182,14 @@ actions:
 - user_form
 - utter_thanks
 - action_intake_api
+- action_itprof_api
+- action_fees1_api
+- action_fees2_api
+- action_fees3_api
+- action_fees4_api
+- action_register_api
+- action_contact_api
+- utter_address
+- utter_office_number
 forms:
 - info_form

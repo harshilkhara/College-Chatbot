@@ -6,7 +6,7 @@ pip3 install rasa==1.10.0
 
 pip install tensorflow==2.1.1
 
-pip3 install rasa-x --extra-index-url https://pypi.rasa.com/simple
+pip3 install rasa-x --extra-index-url https://pypi.rasa.com/simple (UI)
 
 rasa shell
 
@@ -15,3 +15,17 @@ rasa train
 rasa x
 
 pip3 install --use-deprecated=legacy-resolver rasa-x --extra-index-url https://pypi.rasa.com/simple
+
+C:\chatbot1\myenv\scripts\activate.bat
+
+cd C:\chatbot\blue2
+
+rasa run actions 
+
+rasa run -m models --enable-api --cors "*" --debug
+
+python -m http.server 8080
+
+localhost:8080/sakec_web.html
+
+pip install beautifulsoup4

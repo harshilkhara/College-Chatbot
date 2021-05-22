@@ -29,15 +29,41 @@
 * intake
     - action_intake_api    
 * gym
-    - utter_gym
+   - utter_gym
 * gym_girls
-    - utter_gym_girls
+   - utter_gym_girls
 * events
-    - utter_events 
+   - utter_events
+* itprof
+   - action_itprof_api
+* fees1
+   - action_fees1_api
+* fees2
+   - action_fees2_api
+* fees3
+   - action_fees3_api
+* fees4
+   - action_fees4_api
+* register
+  -  action_register_api
+* contact
+   - action_contact_api
+* thanks
+  - utter_thanks 
+* goodbye
+  - utter_goodbye
+* bot_challenge
+  - utter_iamabot
+* address
+  - utter_address
+
+
+
+
 
 ## Happy Parent 
 * greet
-    - utter_ask_type
+   - utter_ask_type
 * parent
     - utter_parent_affirm
 * courses
@@ -85,3 +111,42 @@
 	- utter_office_number
 * affiliation
 	- utter_affiliation -->
+
+## happy itprof
+
+* itprof
+  - action_itprof_api
+
+##happy fees1
+ 
+ * fees1
+   - action_fees1_api
+
+##happy fees2
+ 
+ * fees2
+   - action_fees2_api
+
+##happy fees3
+ 
+ * fees3
+   - action_fees3_api
+
+##happy fees4
+ 
+ * fees4
+   - action_fees4_api
+
+## happy register
+ 
+ * register
+  - action_register_api
+
+##  happy contact
+  
+  * contact
+   - action_contact_api
+
+
+
+

@@ -4,7 +4,7 @@
 - hi
 - good morning
 - good evening
-- hey there 
+- hey there
 
 ## intent:working_hours
 - What are the college office working hours?
@@ -119,7 +119,7 @@
 - no way
 - not really
 
-## intent:thank
+## intent:thanks
 - thank you
 - thanks
 - wow that's great
@@ -152,3 +152,49 @@
 - are you a human?
 - am I talking to a bot?
 - am I talking to a human?
+
+## intent:itprof
+ - who is the hod of it?
+ - may i know who is the hod of it?
+ - hod of it?
+ - HOD of IT department?
+ - IT department?
+
+## intent: fees1
+ - what is the fees of 1st year?
+ - first year fees?
+ - tuition fee for first year?
+ 
+## intent: fees2
+ - 2nd year fees?
+ - 2 year fee?
+ 
+## intent: fees3
+ - what is the fees of third year?
+ - 3 year fee?
+ - fee for third?
+ 
+
+## intent: fees4
+ - fourth year fee?
+ - what is the fees of 4th year?
+
+
+## intent:register
+ - what is the last date of admission?
+ - last date for admission?
+ - admission dates?
+
+## intent:contact
+ - what is the contact number?
+ - how to contact college?
+ - office number?
+ - contact no? 
+ - office no?
+
+
+## intent: address
+  - what is the address of the college?
+  - where is the college located?
+  - address of the college?
+

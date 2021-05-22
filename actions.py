@@ -12,7 +12,7 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.forms import FormAction
 
-from scraper import Intake
+from scraper import *
 
 class ActionHelloWorld(FormAction):
 
@@ -42,3 +42,67 @@ class ActionIntake(Action):
 		text=Intake()
 		dispatcher.utter_message(template="utter_intake",temp=text)
 		return []
+
+class ActionItprof(Action):
+	def name(self) -> Text:
+		return "action_itprof_api"
+	def run(self, dispatcher: CollectingDispatcher,tracker: Tracker,domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+		
+		text=Itprof()
+		dispatcher.utter_message(template="utter_itprof",temp1=text)
+		return []
+
+class ActionFees1(Action):
+	def name(self) -> Text:
+		return "action_fees1_api"
+	def run(self, dispatcher: CollectingDispatcher,tracker: Tracker,domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+		
+		text=Fees1()
+		dispatcher.utter_message(template="utter_fees1",temp2=text)
+		return []
+
+class ActionFees2(Action):
+	def name(self) -> Text:
+		return "action_fees2_api"
+	def run(self, dispatcher: CollectingDispatcher,tracker: Tracker,domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+		
+		text=Fees2()
+		dispatcher.utter_message(template="utter_fees2",temp3=text)
+		return []
+
+class ActionFees3(Action):
+	def name(self) -> Text:
+		return "action_fees3_api"
+	def run(self, dispatcher: CollectingDispatcher,tracker: Tracker,domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+		
+		text=Fees3()
+		dispatcher.utter_message(template="utter_fees3",temp4=text)
+		return []
+
+class ActionFees4(Action):
+	def name(self) -> Text:
+		return "action_fees4_api"
+	def run(self, dispatcher: CollectingDispatcher,tracker: Tracker,domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+		
+		text=Fees2()
+		dispatcher.utter_message(template="utter_fees4",temp5=text)
+		return []
+
+class ActionRegister(Action):
+	def name(self) -> Text:
+		return "action_register_api"
+	def run(self, dispatcher: CollectingDispatcher,tracker: Tracker,domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+		
+		text=Register()
+		dispatcher.utter_message(template="utter_register",temp6=text)
+		return []
+
+class ActionContact(Action):
+	def name(self) -> Text:
+		return "action_contact_api"
+	def run(self, dispatcher: CollectingDispatcher,tracker: Tracker,domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+		
+		text=Contact()
+		dispatcher.utter_message(template="utter_contact",temp7=text)
+		return []
+
