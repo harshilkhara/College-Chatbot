@@ -2,14 +2,13 @@
 
 Shah & Anchor Kutcchi Engineering college has an extensive website with a sea of information on different programs and courses offered. Often times, new visitors do not know where to start looking for the information they want. 
 
-<img width="1037" alt="p1" src="https://user-images.githubusercontent.com/50494307/229663058-1fde2493-a754-4018-a090-fa6b83ca985c.png">
-
-
-Hence, we decided to create a chatbot to provide visitors with easy access to academic program details, campus maps, financial aid information, and the mountains of information housed on a website.
-
-<img width="979" alt="p2" src="https://user-images.githubusercontent.com/50494307/229665005-a9a3cfd2-2d4b-4504-98e6-28391deace32.png">
+Hence, we decided to create a chatbot to provide visitors with easy access to academic program details, campus maps, financial aid information, and the mountains of information housed on a website. 
 
 Moreover, when a website visitor offers their email address, a chatbot can share that information with the school’s CRM in real-time. This helps construct a knowledge base of potential students, while also updating and validating the existing data. Admissions staff will know why someone was on the website and what services or information they’re interested in learning more about. This can be used for content curation as well as email outreach to prospective students.
+
+<img width="1037" alt="p1" src="https://user-images.githubusercontent.com/50494307/229663058-1fde2493-a754-4018-a090-fa6b83ca985c.png">
+
+<img width="979" alt="p2" src="https://user-images.githubusercontent.com/50494307/229665005-a9a3cfd2-2d4b-4504-98e6-28391deace32.png">
 
 <img width="1069" alt="p3" src="https://user-images.githubusercontent.com/50494307/229665059-07877e58-4338-45b7-9e27-a29edcdfe371.png">
 
